@@ -1,0 +1,249 @@
+[
+  {
+	"rating": 3.9870000000000005,
+	"id": 530915,
+	"revenue": 374733942,
+	"releaseDate": "2019-12-25",
+	"director": {
+	  "name": "Sam Mendes",
+	  "pictureUrl": "https://image.tmdb.org/t/p/w500/5z89X9rB76JDblqMQ52fviwXxAN.jpg"
+	},
+	"posterUrl": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+	"cast": [
+	  {
+		"name": "George MacKay",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/80IQRdk9FIfkVJQB54Y7rZjNyDj.jpg",
+		"character": "Lance Corporal Schofield"
+	  },
+	  {
+		"name": "Dean-Charles Chapman",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/sDWP1EZKmzb46Arm8igxpI9siYx.jpg",
+		"character": "Lance Corporal Blake"
+	  },
+	  {
+		"name": "Mark Strong",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/3cNmatYsoifytg7TfQhI1EHow3v.jpg",
+		"character": "Captain Smith"
+	  },
+	  {
+		"name": "Andrew Scott",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/akbGBP3RI4siNLPr8Pa6YcD2NJt.jpg",
+		"character": "Lieutenant Leslie"
+	  },
+	  {
+		"name": "Richard Madden",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/zP1QxxjhtnnjMutuYKtlOnvYD7P.jpg",
+		"character": "Lieutenant Blake"
+	  }
+	],
+	"runtime": 119,
+	"title": "1917",
+	"overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.",
+	"reviews": 9932,
+	"budget": 100000000,
+	"language": "en",
+	"genres": [
+	  "War",
+	  "Drama",
+	  "Action",
+	  "Thriller",
+	  "History"
+	]
+  },
+  {
+	"rating": 3.7455,
+	"id": 186,
+	"revenue": 56308881,
+	"releaseDate": "2006-02-24",
+	"director": {
+	  "name": "Paul McGuigan",
+	  "pictureUrl": "https://image.tmdb.org/t/p/w500/8mvSSW9LWnORFvClg4sdHfM1zZJ.jpg"
+	},
+	"posterUrl": "https://image.tmdb.org/t/p/w500/x21s3p5wPww534nYj1cWakTcqz4.jpg",
+	"cast": [
+	  {
+		"name": "Josh Hartnett",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/9JS3PeypxTmHVXOnLCMRzJzySxO.jpg",
+		"character": "Slevin"
+	  },
+	  {
+		"name": "Morgan Freeman",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/905k0RFzH0Kd6gx8oSxRdnr6FL.jpg",
+		"character": "The Boss"
+	  },
+	  {
+		"name": "Ben Kingsley",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/vQtBqpF2HDdzbfXHDzR4u37i1Ac.jpg",
+		"character": "The Rabbi"
+	  },
+	  {
+		"name": "Lucy Liu",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg",
+		"character": "Lindsey"
+	  },
+	  {
+		"name": "Bruce Willis",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/caX3KtMU42EP3VLRFFBwqIIrch5.jpg",
+		"character": "Mr. Goodkat"
+	  }
+	],
+	"runtime": 110,
+	"title": "Lucky Number Slevin",
+	"overview": "Slevin is mistakenly put in the middle of a personal war between the city’s biggest criminal bosses. Under constant watch, Slevin must try not to get killed by an infamous assassin and come up with an idea of how to get out of his current dilemma.",
+	"reviews": 3403,
+	"budget": 27000000,
+	"language": "en",
+	"genres": [
+	  "Drama",
+	  "Thriller",
+	  "Crime",
+	  "Mystery"
+	]
+  },
+  {
+    "rating" : 3.4159999999999995,
+    "id" : 14337,
+    "revenue" : 545436,
+    "releaseDate" : "2004-10-08",
+    "director" : {
+      "name" : "Shane Carruth",
+      "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/zytHHEqP385IHKUW7t8JKg85atg.jpg"
+    },
+    "posterUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/voAV7fWA1g4mWsRm6l0rVsxU3sG.jpg",
+    "cast" : [
+      {
+        "name" : "Shane Carruth",
+        "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/zytHHEqP385IHKUW7t8JKg85atg.jpg",
+        "character" : "Aaron"
+      },
+      {
+        "name" : "David Sullivan",
+        "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/vUdSFwbtQJnmvdXgUKq7O6M1FoU.jpg",
+        "character" : "Abe"
+      },
+      {
+        "name" : "Casey Gooden",
+        "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/1LIFlANscRuELaS9lOUNPxN7Plv.jpg",
+        "character" : "Robert"
+      },
+      {
+        "name" : "Anand Upadhyaya",
+        "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/lcnjeSB36wBHgBaTYyMe61fouy5.jpg",
+        "character" : "Philip"
+      },
+      {
+        "name" : "Kevin Lucero Less",
+        "pictureUrl" : "https:\/\/image.tmdb.org\/t\/p\/w500\/qU42t6lYlURRbv9qKiG98NUob3i.jpg",
+        "character" : "Seth Pool Party Guest"
+      }
+    ],
+    "runtime" : 77,
+    "title" : "Primer",
+    "overview" : "Friends and fledgling entrepreneurs invent a device in their garage which reduces the apparent mass of any object placed inside it, but they discover that it has some highly unexpected capabilities - ones that could enable them to do and to have seemingly anything they want. Taking advantage of this unique opportunity is the first challenge they face. Dealing with the consequences is the next.",
+    "reviews" : 1737,
+    "budget" : 7000,
+    "language" : "en",
+    "genres" : [
+      "Science Fiction",
+      "Drama",
+      "Thriller"
+    ]
+  },
+  {
+	"rating": 3.787,
+	"id": 246741,
+	"revenue": 6263224,
+	"releaseDate": "2014-06-19",
+	"director": {
+	  "name": "Taika Waititi",
+	  "pictureUrl": "https://image.tmdb.org/t/p/w500/zCLBXGo5BS2e27srDBa5WpRnKul.jpg"
+	},
+	"posterUrl": "https://image.tmdb.org/t/p/w500/ftrq6LsDNfLPQzrlonOaxSq4yMh.jpg",
+	"cast": [
+	  {
+		"name": "Taika Waititi",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/zCLBXGo5BS2e27srDBa5WpRnKul.jpg",
+		"character": "Viago"
+	  },
+	  {
+		"name": "Jemaine Clement",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg",
+		"character": "Vladislav"
+	  },
+	  {
+		"name": "Jonny Brugh",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/5iKh2jMEsx83z4Gz4pDA8deRRux.jpg",
+		"character": "Deacon"
+	  },
+	  {
+		"name": "Cori Gonzalez-Macuer",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/Am1iRgnClQ51bH3BCZ8TXKUYdCT.jpg",
+		"character": "Nick"
+	  },
+	  {
+		"name": "Stu Rutherford",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/7RkK1wBbaBor2Ib4gu51I42f5C5.jpg",
+		"character": "Stu"
+	  }
+	],
+	"runtime": 86,
+	"title": "What We Do in the Shadows",
+	"overview": "Vampire housemates try to cope with the complexities of modern life and show a newly turned hipster some of the perks of being undead.",
+	"reviews": 2876,
+	"budget": 1600000,
+	"language": "en",
+	"genres": [
+	  "Comedy",
+	  "Horror"
+	]
+  },
+  {
+	"rating": 4.087,
+	"id": 475557,
+	"revenue": 1074251311,
+	"releaseDate": "2019-10-01",
+	"director": {
+	  "name": "Todd Phillips",
+	  "pictureUrl": "https://image.tmdb.org/t/p/w500/A6FPht87DiqXzp456WjakLi2AtP.jpg"
+	},
+	"posterUrl": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+	"cast": [
+	  {
+		"name": "Joaquin Phoenix",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/1UzIGSKFH0A9ouwnMwQQWUiqV2s.jpg",
+		"character": "Arthur Fleck / Joker"
+	  },
+	  {
+		"name": "Robert De Niro",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg",
+		"character": "Murray Franklin"
+	  },
+	  {
+		"name": "Zazie Beetz",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/ijrT4pvALvxU0gphea4YxDnDh6e.jpg",
+		"character": "Sophie Dumond"
+	  },
+	  {
+		"name": "Frances Conroy",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/aJRQAkO24L6bH8qkkE5Iv1nA3gf.jpg",
+		"character": "Penny Fleck"
+	  },
+	  {
+		"name": "Brett Cullen",
+		"pictureUrl": "https://image.tmdb.org/t/p/w500/4P6TsRcnr9MRbXlCdHitulGM5LT.jpg",
+		"character": "Thomas Wayne"
+	  }
+	],
+	"runtime": 122,
+	"title": "Joker",
+	"overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+	"reviews": 20916,
+	"budget": 55000000,
+	"language": "en",
+	"genres": [
+	  "Crime",
+	  "Thriller",
+	  "Drama"
+	]
+  }
+]
