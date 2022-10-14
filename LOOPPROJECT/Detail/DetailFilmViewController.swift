@@ -63,6 +63,14 @@ class DetailFilmViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        guard let image = URL(string: film.posterUrl) else { return }
+        let message = "Hey have you already seen this movie? It's one of my favorites! It's name is " + film.title
+        
+        let shareSheetVC = UIActivityViewController(activityItems: [image, message], applicationActivities: nil)
+        present(shareSheetVC, animated: true)
+        
+    }
     func setFlagImage(state: Bool) -> UIImage{
         if state{
             return (UIImage(named: "FavoriteFlagSelected")?.withRenderingMode(.alwaysOriginal))!
