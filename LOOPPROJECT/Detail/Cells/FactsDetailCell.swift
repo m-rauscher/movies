@@ -15,7 +15,7 @@ class FactsDetailCell: UICollectionViewCell {
     
     func setUpView(film: Film){
         
-        ratingImg.image = getRatingImage(rating: film.rating)
+        ratingImg.image = Rating(rating: film.rating, colorMode: "Light").getImage()
         
         //get Date String -------- "releaseDate" : "2016-06-16",
         let dateFormatter = DateFormatter()
@@ -49,22 +49,5 @@ class FactsDetailCell: UICollectionViewCell {
      
         attributedTitle.append(yearAttributedString)
         titelYear.attributedText = attributedTitle
-    }
-
-    
-    func getRatingImage(rating: Float) -> UIImage{
-        let ratingInt = (Int)(rating + 0.5)
-        switch ratingInt {
-        case 2:
-            return UIImage(named: "2starLight")!
-        case 3:
-            return UIImage(named: "3starLight")!
-        case 4:
-            return UIImage(named: "4starLight")!
-        case 5:
-            return UIImage(named: "5starLight")!
-        default:
-            return UIImage(named: "1starLight")!
-        }
     }
 }

@@ -28,7 +28,7 @@ class StaffPicksHomeCell: UICollectionViewCell {
         posterView.layer.cornerRadius = 10
         posterView.clipsToBounds = true
         
-        ratingImg.image = getRatingImage(rating: film.rating)
+        ratingImg.image = Rating(rating: film.rating, colorMode: "Dark").getImage()
         
         titel.text = film.title
         
@@ -36,25 +36,6 @@ class StaffPicksHomeCell: UICollectionViewCell {
         favoriteFlag.setImage(UIImage(named: "FavoriteFlagDarkSelected"), for: .selected)
         favoriteFlag.addTarget(self, action: #selector(flagPressed), for: .touchUpInside)
         favoriteFlag.isSelected = film.favorite ?? false
-    }
-    
-    func getRatingImage(rating: Float) -> UIImage{
-        
-        let ratingInt = (Int)(rating + 0.5)
-        
-        switch ratingInt {
-        case 2:
-            return UIImage(named: "2starDark")!
-        case 3:
-            return UIImage(named: "3starDark")!
-        case 4:
-            return UIImage(named: "4starDark")!
-        case 5:
-            return UIImage(named: "5starDark")!
-        default:
-            return UIImage(named: "1starDark")!
-        }
-        
     }
     
     @objc

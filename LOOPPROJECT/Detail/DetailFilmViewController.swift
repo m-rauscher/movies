@@ -39,7 +39,7 @@ class DetailFilmViewController: UIViewController {
     func setUpNavigationBar(){
         navigationTitle.title = film.title
         closeBUtton.image = UIImage(named: "closeDetail")?.withRenderingMode(.alwaysOriginal)
-        flagButton.image = setFlagImage(state: film.favorite!)
+        flagButton.image = setFlagImage(state: film.favorite ?? false)
     }
     
     func setUpDetailCollectionView(){
@@ -51,11 +51,11 @@ class DetailFilmViewController: UIViewController {
     @IBAction func flagButtonPressed(_ sender: Any) {
         if film.favorite == false{
             film.favorite = true
-            flagButton.image = setFlagImage(state: film.favorite!)
+            flagButton.image = setFlagImage(state: film.favorite ?? false)
         }
         else{
             film.favorite = false
-            flagButton.image = setFlagImage(state: film.favorite!)
+            flagButton.image = setFlagImage(state: film.favorite ?? false)
         }
         
     }
@@ -120,7 +120,7 @@ extension DetailFilmViewController: UICollectionViewDelegate, UICollectionViewDa
             return cell
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "overviewDetailCell", for: indexPath) as! OverviewDetailCell
-            cell.setUpView(overview: film.overview)
+            cell.setUpView(text: film.overview)
             return cell
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "personDetailCell", for: indexPath) as! PersonDetailCell

@@ -47,7 +47,7 @@ class SearchViewController: UIViewController, DetailDelegate {
     func setUpData(){
         if searchString == "Search all favorites"{
             filteredFilms = FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                film.favorite!
+                film.favorite ?? false
             })
         }
         else{

@@ -50,7 +50,7 @@ class HomeViewController: UIViewController, DetailDelegate, SearchDelegate{
             if let indexPath = homeCollectionView.indexPathsForSelectedItems?.first{
                     let controller = segue.destination as! DetailFilmViewController
                 controller.film = FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                    film.favorite!
+                    film.favorite ?? false
                 })[indexPath.item]
                 controller.delegate = self
             }
@@ -95,7 +95,6 @@ class HomeViewController: UIViewController, DetailDelegate, SearchDelegate{
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
         if let view = background {
             homeCollectionView.sendSubviewToBack(view)
         }
@@ -127,11 +126,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return 1
         case 1:
             return min(FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                film.favorite!
+                film.favorite ?? false
             }).count + 1, 4)
         case 2:
             return FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                film.picked!
+                film.picked ?? false
             }).count
         default:
             fatalError("Section not defined")
@@ -143,12 +142,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "searchButtonCell", for: indexPath) as! SearchButtonHomeCell
             cell.setUpView()
-            //cell.layer.cornerRadius = 12
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favoritesCell", for: indexPath) as! FavoritesHomeCell
             let seeAllindex = min(FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                film.favorite!
+                film.favorite ?? false
             }).count, 3)
             
             if indexPath.row == seeAllindex {
@@ -156,14 +154,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
             else{
                 cell.setUpView(film: FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                    film.favorite!
+                    film.favorite ?? false
                 })[indexPath.item])
             }
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "staffPicksCell", for: indexPath) as! StaffPicksHomeCell
             cell.setUpView(film: FilmDefaults.loadFilms(key: ALL_FILMS).filter({ film in
-                film.picked!
+                film.picked ?? false
             })[indexPath.item])
             return cell
         default:

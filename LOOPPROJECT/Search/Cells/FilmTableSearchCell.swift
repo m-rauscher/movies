@@ -23,7 +23,7 @@ class FilmTableSearchCell: UITableViewCell {
         releaseDate.text = String( film.releaseDate.prefix(4))
         posterImage.downloaded(from: film.posterUrl)
         posterImage.layer.cornerRadius = 10
-        rating.image = getRatingImage(rating: film.rating)
+        rating.image = Rating(rating: film.rating, colorMode: "Dark").getImage()
         linie.image = UIImage(named: "FavoriteTrennlinie")
         
         
@@ -32,23 +32,6 @@ class FilmTableSearchCell: UITableViewCell {
         favoriteFlag.addTarget(self, action: #selector(flagPressed), for: .touchUpInside)
         favoriteFlag.isSelected = film.favorite ?? false
         
-    }
-    func getRatingImage(rating: Float) -> UIImage{
-        
-        let ratingInt = (Int)(rating + 0.5)
-        
-        switch ratingInt {
-        case 2:
-            return UIImage(named: "2starDark")!
-        case 3:
-            return UIImage(named: "3starDark")!
-        case 4:
-            return UIImage(named: "4starDark")!
-        case 5:
-            return UIImage(named: "5starDark")!
-        default:
-            return UIImage(named: "1starDark")!
-        }
     }
     @objc
     func flagPressed(_ button: UIButton) {

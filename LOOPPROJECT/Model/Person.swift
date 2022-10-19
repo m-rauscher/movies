@@ -8,7 +8,7 @@
 import Foundation
 
 struct Person: Codable{
-    var name: String
-    var pictureUrl: String
-    var character: String?
+    let name: String
+    let pictureUrl: String
+    let character: String?
 }
