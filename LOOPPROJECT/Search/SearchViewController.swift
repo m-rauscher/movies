@@ -89,8 +89,8 @@ class SearchViewController: UIViewController, DetailDelegate {
     }
     
     func updateRatingImage(image: UIImageView, indexPath: IndexPath) -> UIImageView{
-        //when rating was not selected before
         if selectedIndex == indexPath {
+        //rating selected
             if !ratingSelected[indexPath.item]{
                 image.tintColor = UIColor(red: 0.992, green: 0.62, blue: 0.008, alpha: 1)
                 ratingSelected[indexPath.item] = true
@@ -150,7 +150,6 @@ class SearchViewController: UIViewController, DetailDelegate {
 }
 
 // MARK: - TableViewController
-// SetUp and Handle searchTableView
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -168,8 +167,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 // MARK: - CollectionViewController
-//Setup and Handle RatingCollectionView
-
 extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

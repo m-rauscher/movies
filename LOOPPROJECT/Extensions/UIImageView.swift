@@ -19,7 +19,9 @@ extension UIImageView {
                   print(error)
                   return
                 }
-                self.image = UIImage(data: data!)
+                DispatchQueue.main.async() { [weak self] in
+                    self?.image = UIImage(data: data!)
+                }
             })
         }
 }

@@ -20,7 +20,6 @@ class HomeViewController: UIViewController, DetailDelegate, SearchDelegate{
         
         registerUserDefaults()
         setUpHomeCollectionView()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

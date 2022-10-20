@@ -18,7 +18,7 @@ class StaffPicksHomeCell: UICollectionViewCell {
     @IBOutlet weak var posterView: UIView!
     
     func setUpView(film: Film){
-        seperator.image = UIImage(named: "FavoriteTrennlinie")
+        seperator.image = UIImage(named: "Separator")
         
         year.text = String(film.releaseDate.prefix(4))
         

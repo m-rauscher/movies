@@ -12,8 +12,6 @@ class PosterDetailCell: UICollectionViewCell {
     @IBOutlet weak var posterImg: UIImageView!
     
     func setUpView(film: Film){
-        
-        //posterView.layer.cornerRadius = 16
         posterImg.downloaded(from: film.posterUrl)
         posterImg.layer.cornerRadius = 16
         

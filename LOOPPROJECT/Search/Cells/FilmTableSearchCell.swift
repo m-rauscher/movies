@@ -24,7 +24,7 @@ class FilmTableSearchCell: UITableViewCell {
         posterImage.downloaded(from: film.posterUrl)
         posterImage.layer.cornerRadius = 10
         rating.image = Rating(rating: film.rating, colorMode: "Dark").getImage()
-        linie.image = UIImage(named: "FavoriteTrennlinie")
+        linie.image = UIImage(named: "Separator")
         
         
         favoriteFlag.setImage(UIImage(named: "FavoriteFlagDark"), for: .normal)

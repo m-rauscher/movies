@@ -778,8 +778,16 @@
         <scene sceneID="pl8-ze-qas">
             <objects>
                 <navigationController navigationBarHidden="YES" id="7jD-HN-qpN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zky-Mp-v3L">
+                    <navigationBar key="navigationBar" hidden="YES" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zky-Mp-v3L">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="High Emphasis Light"/>
+                        <color key="barTintColor" name="High Emphasis Light"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="ECC-rQ-qEr" kind="relationship" relationship="rootViewController" id="oOg-Sy-tH1"/>
@@ -792,7 +800,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="oOw-rU-b2W"/>
-        <segue reference="Q5U-rn-Vvu"/>
+        <segue reference="5RR-Hn-nUi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5starDark" width="58" height="9"/>
