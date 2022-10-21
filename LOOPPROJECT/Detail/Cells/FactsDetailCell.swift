@@ -10,7 +10,7 @@ import UIKit
 class FactsDetailCell: UICollectionViewCell {
     
     @IBOutlet weak var dateDuration: UILabel!
-    @IBOutlet weak var titelYear: UILabel!
+    @IBOutlet weak var titleYear: UILabel!
     @IBOutlet weak var ratingImg: UIImageView!
     
     func setUpView(film: Film){
@@ -32,13 +32,9 @@ class FactsDetailCell: UICollectionViewCell {
         
         dateDuration.text = dateString + "  ·  " + (runtimeString ?? "")
        
-        var titleString = film.title
-        if film.title.count > 20{
-            titleString = String(film.title.prefix(20)) + "..."
-        }
         let yearString = " (" + film.releaseDate.prefix(4) + ")"
         
-        let attributedTitle = NSMutableAttributedString(string: titleString, attributes: [
+        let attributedTitle = NSMutableAttributedString(string: film.title, attributes: [
             .font: UIFont.systemFont(ofSize: 24, weight: .heavy),
             .foregroundColor: UIColor(named: "Background") ?? UIColor.black
         ])
@@ -48,6 +44,9 @@ class FactsDetailCell: UICollectionViewCell {
         ])
      
         attributedTitle.append(yearAttributedString)
-        titelYear.attributedText = attributedTitle
+        titleYear.attributedText = attributedTitle
+        titleYear.numberOfLines = 0
+        titleYear.lineBreakMode = .byWordWrapping
+        titleYear.translatesAutoresizingMaskIntoConstraints = false
     }
 }

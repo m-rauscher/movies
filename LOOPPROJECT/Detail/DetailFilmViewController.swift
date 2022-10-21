@@ -204,17 +204,19 @@ extension DetailFilmViewController{
     
     func FactsLayoutSection() -> NSCollectionLayoutSection {
         
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                               heightDimension: .estimated(70))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                heightDimension: .estimated(70))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-
+        
+        let leading = (detailCollectionView.frame.size.width * 0.1)
+        
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .none
-        section.contentInsets = .init(top: 12, leading: 0, bottom: 0, trailing: 0)
+        section.contentInsets = .init(top: 12, leading: leading, bottom: 0, trailing: leading)
         return section
 
     }

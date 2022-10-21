@@ -287,10 +287,10 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="factsDetailCell" id="aOQ-qP-wS1" customClass="FactsDetailCell" customModule="Movies" customModuleProvider="target">
-                                        <rect key="frame" x="286" y="135" width="128" height="70"/>
+                                        <rect key="frame" x="286" y="132.5" width="128" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="m42-cl-Fao">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-Ue-E07">
@@ -302,12 +302,15 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqo-Lb-LKb">
                                                     <rect key="frame" x="0.0" y="27" width="128" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="WvF-fl-O7W"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59844665601849556" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRQ-2p-IoX">
-                                                    <rect key="frame" x="0.0" y="44" width="128" height="29"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRQ-2p-IoX">
+                                                    <rect key="frame" x="0.0" y="44" width="128" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -317,18 +320,19 @@
                                                 <constraint firstItem="wAl-Ue-E07" firstAttribute="centerX" secondItem="m42-cl-Fao" secondAttribute="centerX" id="7t7-DD-npZ"/>
                                                 <constraint firstItem="jRQ-2p-IoX" firstAttribute="leading" secondItem="m42-cl-Fao" secondAttribute="leading" id="8DO-vD-dt0"/>
                                                 <constraint firstAttribute="trailing" secondItem="Jqo-Lb-LKb" secondAttribute="trailing" id="EKO-dJ-iQR"/>
+                                                <constraint firstItem="jRQ-2p-IoX" firstAttribute="top" secondItem="Jqo-Lb-LKb" secondAttribute="bottom" id="V5d-Df-A3J"/>
                                                 <constraint firstItem="Jqo-Lb-LKb" firstAttribute="leading" secondItem="m42-cl-Fao" secondAttribute="leading" id="bjI-Ep-JJe"/>
                                                 <constraint firstItem="Jqo-Lb-LKb" firstAttribute="top" secondItem="wAl-Ue-E07" secondAttribute="bottom" constant="12" id="hdB-nW-Nja"/>
-                                                <constraint firstItem="jRQ-2p-IoX" firstAttribute="top" secondItem="Jqo-Lb-LKb" secondAttribute="bottom" id="kd7-FJ-5Ch"/>
                                                 <constraint firstAttribute="trailing" secondItem="jRQ-2p-IoX" secondAttribute="trailing" id="rhm-PR-pvK"/>
+                                                <constraint firstAttribute="bottom" secondItem="jRQ-2p-IoX" secondAttribute="bottom" id="wQl-ds-sQz"/>
                                                 <constraint firstItem="wAl-Ue-E07" firstAttribute="top" secondItem="m42-cl-Fao" secondAttribute="top" id="zOg-Hi-AmL"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="128" height="70"/>
+                                        <size key="customSize" width="128" height="75"/>
                                         <connections>
                                             <outlet property="dateDuration" destination="Jqo-Lb-LKb" id="Jn4-LD-GMo"/>
                                             <outlet property="ratingImg" destination="wAl-Ue-E07" id="Tbc-6Y-cbh"/>
-                                            <outlet property="titelYear" destination="jRQ-2p-IoX" id="Yti-80-vyf"/>
+                                            <outlet property="titleYear" destination="jRQ-2p-IoX" id="Yti-80-vyf"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="genreDetailCell" id="zNc-Fa-J33" customClass="GenreDetailCell" customModule="Movies" customModuleProvider="target">

@@ -216,4 +216,9 @@ extension SearchViewController: UITextFieldDelegate{
         
         searchTableView.reloadData()
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.resignFirstResponder()
+        return false
+    }
 }
