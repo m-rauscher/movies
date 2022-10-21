@@ -1,5 +1,5 @@
 //
-//  RatingCollectionViewCell.swift
+//  RatingSearchCell.swift
 //  LOOPPROJECT
 //
 //  Created by Moritz Rauscher on 05.10.22.

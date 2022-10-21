@@ -1,5 +1,5 @@
 //
-//  StaffPicksCell.swift
+//  StaffPicksHomeCell.swift
 //  LOOPPROJECT
 //
 //  Created by Moritz Rauscher on 10.10.22.

@@ -1,5 +1,5 @@
 //
-//  SearchTableViewCell.swift
+//  FilmTableSearchCell.swift
 //  LOOPPROJECT
 //
 //  Created by Moritz Rauscher on 04.10.22.

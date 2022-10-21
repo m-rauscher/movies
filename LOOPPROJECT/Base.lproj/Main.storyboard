@@ -95,17 +95,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="185" height="266"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeeAllButton" translatesAutoresizingMaskIntoConstraints="NO" id="fIC-iY-XUD">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeeAllButton" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-ct-r5W">
                                                     <rect key="frame" x="27" y="96.5" width="131" height="73"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="fIC-iY-XUD" firstAttribute="centerY" secondItem="RYD-8w-DK3" secondAttribute="centerY" id="Y4w-BD-cx1"/>
-                                                <constraint firstItem="fIC-iY-XUD" firstAttribute="centerX" secondItem="RYD-8w-DK3" secondAttribute="centerX" id="gRZ-cS-5UI"/>
+                                                <constraint firstItem="LbW-ct-r5W" firstAttribute="centerX" secondItem="RYD-8w-DK3" secondAttribute="centerX" id="9HA-hA-RlK"/>
+                                                <constraint firstItem="LbW-ct-r5W" firstAttribute="centerY" secondItem="RYD-8w-DK3" secondAttribute="centerY" id="orv-7x-NRZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="seeAllButton" destination="fIC-iY-XUD" id="0oW-7Q-n5d"/>
+                                            <outlet property="seeAllButton" destination="LbW-ct-r5W" id="qyw-zD-PTc"/>
                                             <segue destination="vOC-Vw-Rr8" kind="push" identifier="allFavoritesSegue" id="NtV-cK-L5G"/>
                                         </connections>
                                     </collectionViewCell>
@@ -585,7 +585,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="354" height="141"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StaffPickImage" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-FU-NQ3">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-FU-NQ3">
                                                     <rect key="frame" x="0.0" y="26" width="60" height="89"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="89" id="SFT-fS-hdU"/>
@@ -800,7 +800,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="oOw-rU-b2W"/>
-        <segue reference="5RR-Hn-nUi"/>
+        <segue reference="KHm-j7-pkd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5starDark" width="58" height="9"/>
@@ -809,7 +809,6 @@
         <image name="NoMovieFound" width="48" height="49"/>
         <image name="SearchButton" width="108" height="108"/>
         <image name="SeeAllButton" width="131" height="73"/>
-        <image name="StaffPickImage" width="120" height="149"/>
         <image name="VectorLeftArrow" width="15" height="15"/>
         <image name="closeDetail" width="30" height="30"/>
         <namedColor name="High Emphasis Light">

@@ -14,12 +14,12 @@ extension UIImageView {
             let networker = NetworkManager.shared
             let url = URL(string: link)!
             
-            networker.downloadImage(imageURL: url, completion: { (data,error) in
+            networker.downloadImage(imageURL: url, completion: { [weak self ] data, error in
                 if let error = error {
                   print(error)
                   return
                 }
-                DispatchQueue.main.async() { [weak self] in
+                DispatchQueue.main.async() {
                     self?.image = UIImage(data: data!)
                 }
             })

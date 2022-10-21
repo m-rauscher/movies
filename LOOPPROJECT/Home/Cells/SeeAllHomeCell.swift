@@ -1,5 +1,5 @@
 //
-//  SeeAllCollectionViewCell.swift
+//  SeeAllHomeCell.swift
 //  LOOPPROJECT
 //
 //  Created by Moritz Rauscher on 04.10.22.

@@ -193,14 +193,16 @@
 				507E40AB28EB18CD0001A7BE /* LaunchScreen.storyboard */,
 				75CCE14828E82CBD008C6BAA /* Info.plist */,
 				5041498328EEFB5B00ABD74E /* ToDo.md */,
-				5057D0C028FFF5FA0065BA60 /* Networking */,
-				503FFF2628F407D400FDEA55 /* Extensions */,
 				75CCE14F28E8343F008C6BAA /* Core */,
+				503FFF2628F407D400FDEA55 /* Extensions */,
+				503B418428F7E0A600008DB7 /* UserDefaults */,
+				5057D0C028FFF5FA0065BA60 /* Networking */,
 				75CCE15028E8356A008C6BAA /* Home */,
 				503FFF1F28F3FE6D00FDEA55 /* Detail */,
 				503FFF2228F4001300FDEA55 /* Search */,
-				503B418428F7E0A600008DB7 /* UserDefaults */,
 				75CCE15128E835D5008C6BAA /* Model */,
+				5057D0BC28FFD7CA0065BA60 /* Rating.swift */,
+				5041498128EEC24E00ABD74E /* PlaceHolderTableView.swift */,
 				75CCE14E28E83411008C6BAA /* Assets */,
 			);
 			path = LOOPPROJECT;
@@ -240,8 +242,6 @@
 				75678B0228E8B07200273F47 /* Film.swift */,
 				75678B0A28E8BAC300273F47 /* FilmLoader.swift */,
 				75678B0428E8B12200273F47 /* Person.swift */,
-				5041498128EEC24E00ABD74E /* PlaceHolderTableView.swift */,
-				5057D0BC28FFD7CA0065BA60 /* Rating.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
