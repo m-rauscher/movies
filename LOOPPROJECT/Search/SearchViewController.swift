@@ -65,6 +65,9 @@ class SearchViewController: UIViewController, DetailDelegate {
         searchTableView.dataSource = self
         searchTableView.showsVerticalScrollIndicator = false
         searchTableView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        
+        NSLayoutConstraint.activate([searchTableView.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor, constant: -10)])
+        
     }
     
     func setUpSearchTextField(string: String){
@@ -86,6 +89,8 @@ class SearchViewController: UIViewController, DetailDelegate {
         setUpSearchTextField(string: searchString)
         setUpData()
         searchTableView.reloadData()
+        ratingCollectionView.reloadData()
+        textFieldDidChangeSelection(searchTextField)
     }
     
     func updateRatingImage(image: UIImageView, indexPath: IndexPath) -> UIImageView{

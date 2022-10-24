@@ -577,7 +577,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="isg-Al-lrc" customClass="PlaceholderTableView" customModule="Movies" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isg-Al-lrc" customClass="PlaceholderTableView" customModule="Movies" customModuleProvider="target">
                                 <rect key="frame" x="30" y="191" width="354" height="705"/>
                                 <color key="backgroundColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor"/>
@@ -755,7 +755,6 @@
                         <color key="backgroundColor" red="0.078431372549019607" green="0.10980392156862745" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hhP-u2-F9H" firstAttribute="top" secondItem="QDY-dO-52l" secondAttribute="bottom" constant="20" id="662-42-xWF"/>
-                            <constraint firstAttribute="bottom" secondItem="isg-Al-lrc" secondAttribute="bottom" id="Ath-tc-jwU"/>
                             <constraint firstItem="isg-Al-lrc" firstAttribute="leading" secondItem="AQm-0C-25h" secondAttribute="leading" constant="30" id="FZy-BC-620"/>
                             <constraint firstItem="QDY-dO-52l" firstAttribute="leading" secondItem="AQm-0C-25h" secondAttribute="leading" constant="30" id="HVM-0r-102"/>
                             <constraint firstItem="AQm-0C-25h" firstAttribute="trailing" secondItem="isg-Al-lrc" secondAttribute="trailing" constant="30" id="JaI-NA-6bt"/>
@@ -804,7 +803,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="oOw-rU-b2W"/>
-        <segue reference="KHm-j7-pkd"/>
+        <segue reference="Q5U-rn-Vvu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5starDark" width="58" height="9"/>
