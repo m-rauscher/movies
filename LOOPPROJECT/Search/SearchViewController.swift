@@ -18,6 +18,7 @@ class SearchViewController: UIViewController, DetailDelegate {
     @IBOutlet weak var searchTableView: PlaceholderTableView!
     @IBOutlet weak var searchBarView: UIView!
     
+    @IBOutlet weak var placeholder: UIView!
     weak var delegate: SearchDelegate?
     
      var filteredFilms : [Film] = []
@@ -66,8 +67,8 @@ class SearchViewController: UIViewController, DetailDelegate {
         searchTableView.showsVerticalScrollIndicator = false
         searchTableView.backgroundColor = UIColor.clear.withAlphaComponent(0)
         
-        NSLayoutConstraint.activate([searchTableView.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor, constant: -10)])
-        
+        NSLayoutConstraint.activate([searchTableView.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor, constant: -10)]
+        )
     }
     
     func setUpSearchTextField(string: String){
@@ -88,7 +89,6 @@ class SearchViewController: UIViewController, DetailDelegate {
         searchString = UserDefaults.standard.string(forKey: "search") ?? "search for movies"
         setUpSearchTextField(string: searchString)
         setUpData()
-        searchTableView.reloadData()
         ratingCollectionView.reloadData()
         textFieldDidChangeSelection(searchTextField)
     }
@@ -196,6 +196,8 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         indexesToRedraw.append(indexPath)
         selectedIndex = indexPath
+        searchTextField.text = nil
+        searchTextField.resignFirstResponder()
         collectionView.reloadItems(at: indexesToRedraw)
         searchTableView.reloadData()
         setUpSearchTextField(string: "search for movies")
